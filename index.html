@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre increíbles destinos y planifica tu próximo viaje con facilidad.">
+    <meta name="author" content="Agencia de Viajes">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agencia de Viajes</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes</h1>
+    </header>
+
+    <!-- Búsqueda de destinos -->
+    <div class="search-container">
+        <h2>Busca tu destino</h2>
+        <input type="text" id="destination" placeholder="Destino" aria-label="Campo para introducir el destino">
+        <input type="date" id="travel-date" aria-label="Selecciona la fecha de viaje">
+        <button onclick="search()" aria-label="Buscar destino y fecha">Buscar</button>
+    </div>
+
+    <!-- Búsqueda de hoteles -->
+    <div class="search-container">
+        <h2>Busca tu hotel</h2>
+        <input type="text" id="hotel-location" placeholder="Ubicación del hotel" aria-label="Campo para introducir la ubicación del hotel">
+        <button onclick="searchHotels()" aria-label="Buscar hoteles">Buscar Hoteles</button>
+    </div>
+
+    <div id="results-container" aria-live="polite">
+        <!-- Los resultados de búsqueda se mostrarán aquí -->
+    </div>
+
+    <footer>
+        <p>© 2025 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
